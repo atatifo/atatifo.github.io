@@ -11,8 +11,6 @@ module.exports = {
     path: 'https://noop/',
   },
 
-  assetPrefix: '.',
-
   // SVGR
   webpack(config) {
     config.module.rules.push({
