@@ -34,8 +34,3 @@ model Project {
   url String?
   photo Photo?
 }
-
-model Skills {
-  id Int @default(autoincrement()) @id
-  name String
-}
