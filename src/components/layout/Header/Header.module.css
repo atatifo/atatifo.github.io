@@ -1,5 +1,5 @@
 .navItem {
-  @apply inline-block relative px-3 pt-6 pb-10 w-20 h-1 text-center rounded-b-full dark:text-white;
+  @apply inline-block relative px-3 pt-6 pb-10 w-20 h-1 text-center rounded-b-full sm:w-20 dark:text-white;
 }
 
 .navItem::after {
