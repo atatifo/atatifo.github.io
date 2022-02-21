@@ -1,5 +1,4 @@
 import clsx from 'clsx';
-import { motion } from 'framer-motion';
 import { ReactNode } from 'react';
 
 interface BgCircleProps {
@@ -19,17 +18,15 @@ export default function BgCircle({
 }: BgCircleProps) {
   return (
     <div className='relative' style={{ width, height }}>
-      <motion.div
+      <div
         className={clsx(
           'bg-primary-light flex absolute -left-12 flex-col justify-center pl-28 rounded-full',
           { 'border-[44px] border-accent': doubleBorder }
         )}
         style={{ width, height, scale: animate ? 0 : 1 }}
-        animate={{ scale: 1 }}
-        transition={{ duration: 0.3 }}
       >
         {children}
-      </motion.div>
+      </div>
     </div>
   );
 }

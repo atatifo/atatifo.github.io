@@ -1,4 +1,3 @@
-import { motion } from 'framer-motion';
 import { GetStaticProps, GetStaticPropsContext } from 'next';
 
 import Button from '@/components/buttons/Button';
@@ -27,23 +26,15 @@ export default function HomePage({ title }: Props) {
       <section className='bg-secondary'>
         <div className='flex justify-between min-h-screen'>
           <BgCircle width='45vw' height='45vw' animate doubleBorder />
-          <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ duration: 0.8 }}
-            className='flex-1 pt-32'
-          >
+          <div className='flex-1 pt-32'>
             <div className='flex items-center'>
               <div className='pr-6 text-3xl'>About Me</div>
-              <motion.div
+              <div
                 className='flex-1 border border-yellow-400'
                 style={{ height: '1px' }}
-                initial={{ x: '100%' }}
-                whileInView={{ x: 0 }}
-                transition={{ duration: 0.5 }}
               >
                 {title}
-              </motion.div>
+              </div>
             </div>
             <div className='pr-16 mt-16 leading-10 text-gray-300'>
               I am a fresh graduated Software Engineer with 2+ years of
@@ -72,7 +63,7 @@ export default function HomePage({ title }: Props) {
                 </a>
               </Button>
             </div>
-          </motion.div>
+          </div>
         </div>
       </section>
     </>
