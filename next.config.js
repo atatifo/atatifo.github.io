@@ -6,12 +6,10 @@ module.exports = {
 
   reactStrictMode: true,
 
-  // Uncoment to add domain whitelist
-  // images: {
-  //   domains: [
-  //     'res.cloudinary.com',
-  //   ],
-  // },
+  images: {
+    loader: 'imgix',
+    path: 'https://noop/',
+  },
 
   // SVGR
   webpack(config) {
